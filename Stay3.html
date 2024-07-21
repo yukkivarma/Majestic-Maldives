@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <title>Stay</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+      body{background-image: linear-gradient(to right top, #0d1f39, #0f1f3f, #131f44, #191e48, #211c4c);}
+ 
+    
+    
+    
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Merriweather;
+    font-size: 23px;
+}
+
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+
+.show {
+  display: block;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+    
+    
+    
+    .button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+        border-radius: 12px;
+}
+ 
+</style>
+</head>
+<body>
+
+
+<div class="main">
+
+<h1 style="color: white">STAY</h1>
+<hr>
+<br>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Hotels</button>
+  <button class="btn" onclick="filterSelection('cars')"> Resorts</button>
+  <button class="btn" onclick="filterSelection('people')"> Guesthouse</button>
+</div>
+
+
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="Hulhule.jpg" alt="Mountains" style="width:100% ; height: 250px"> <br>
+  
+      <h3 class="text-uppercase font weight-bold">
+        Hulhule Island Hotel
+       
+        </h3>
+         <p>Hulhule Island Hotel, located on the international airport island, is a modern and exotic hotel catering to the diversified needs of guests.</p>
+        <a href="https://www.hih.com.mv/?utm_content={country_code}" target="_blank">
+            
+               <button class="button"> Read More </button>
+            </a>
+      
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="Mo.jpg" style="width:100% ; height: 250px">
+      <h4 class="text-uppercase font-weight-bold">
+                
+                    MO Hotel
+          
+                      
+           </h4>
+        <p>MO Hotel (Laamu Gan) features with 30 Rooms, large Garden with an out Door Swimming pool and Crystal clear water with white Beach Area.</p>
+        <a href="https://www.agoda.com/mo-hotel/hotel/maldives-islands-mv.html?cid=1844104" target="_blank">
+             <button class="button"> Read More </button>
+            </a>
+      
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="https://radissonhotels.iceportal.com/image/radisson-blu-resort-maldives/exteriorview/16256-122445-f68647616_3xl.jpg" style="width:100% ; height: 250px">
+      <h4 class="text-uppercase font-weight-bold">
+               
+                    Mookai Hotel
+                
+              
+                &nbsp;
+          </h4>
+        <p class="card-text mb-5">
+                Just a few minutes’ walk from the airport ferry terminal, Mookai Hotel is the ideal choice for business travelers and tourists visiting.
+            </p>
+       <a href="https://mookaihotel.com/" target="_blank">
+            <button class="button"> Read More </button>
+            </a>
+      
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/ff/3c/78/adaaran-prestige-vadoo.jpg" alt="Car" style="width:100% ;height:250px">
+        <h4 class="text-uppercase font-weight-bold">
+               
+                    Adaaran Prestige Vadoo
+        
+                
+            </h4>
+     <p class="card-text mb-5">
+                Welcome to Adaaran Prestige Vadoo, where time ceases to exist and the voice of the Indian Ocean beckons you to her shores.
+            </p>
+        <a href="https://www.adaaran.com/prestigevadoo/" target="_blank">
+               <button class="button"> Read More </button>
+            </a>
+                   
+      
+    </div>
+  </div>
+    
+    
+  <div class="column cars">
+    <div class="content">
+    <img src="https://cf.bstatic.com/images/hotel/max1024x768/212/212032057.jpg" alt="Car" style="width:100% ;height:250px">
+    <h4 class="text-uppercase font-weight-bold">
+              
+                    Amilla Fushi
+              
+               
+            </h4>
+        <p class="card-text mb-5">
+                Amilla Fushi name translates to ‘My Island Home’. Whitewashed villas sit over turquoise waters at our Baa Atoll Maldives resort. 
+            </p>
+        <a href="https://www.amilla.com/" target="_blank">
+              <button class="button"> Read More </button>
+            </a>
+    </div>
+  </div>
+    
+  <div class="column cars">
+    <div class="content">
+    <img src="https://cf.bstatic.com/images/hotel/max1024x768/186/186545479.jpg" alt="Car" style="width:100% ; height: 250px">
+      <h4 class="text-uppercase font-weight-bold">
+               
+                    Banyan Tree Maldives Vabbinfaru
+          
+               
+            </h4>
+        <p class="card-text mb-5">
+                Celebrated for its soft and sandy shores, amazing house reef, kaleidoscopic Maldivian sunset panoramas and an inimitable ambiance of sophisticated .
+            </p>
+        <a href="https://www.banyantree.com/en/maldives/vabbinfaru/" target="_blank">
+            <button class="button"> Read More </button>
+            </a>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="https://thumbs.dreamstime.com/t/typical-tropical-hotel-room-typical-tropical-hotel-room-maldives-109135858.jpg" alt="Car" style="width:100% ;height:250px">
+     <h4 class="text-uppercase font-weight-bold">
+               
+                    Tropical Biosphere
+               
+               
+            </h4>
+
+            <p class="card-text mb-5">
+                Located on the beautiful Kamadhoo island, Baa Atoll in the heart of the UNESCO Biosphere Reserve. Surrounded by amazing coral reefs.
+            </p>
+
+            <a href="https://www.agoda.com/tropical-biosphere-hotel/hotel/maldives-islands-mv.html?cid=1844104" target="_blank">
+              <button class="button"> Read More </button>
+            </a>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://pix5.agoda.net/hotelimages/3002370/-1/4dd53ae7d1dd0610c1089e59a91efe81.jpg" alt="Car" style="width:100% ; height:250px">
+      <h4 class="text-uppercase font-weight-bold">
+      
+               
+                    Bliss Dhigurah
+              
+               
+            </h4>
+
+            <p class="card-text mb-5">
+                Whale sharks, manta rays, the best dive sites, nature and a stunning beach! Experience the island life, plunge into the local culture and nature.
+            </p>
+
+            <a href="https://www.bliss.mv/en/" target="_blank">
+             <button class="button"> Read More </button>
+            </a>
+        
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://maldives-magazine.com/pictures/10best-guesthouses.jpg" alt="Car" style="width:100% ; height:250px">
+      <h4 class="text-uppercase font-weight-bold">
+                
+                    Plumeria
+             
+                
+            </h4>
+
+            <p class="card-text mb-5">
+                Plumeria is designed to provide maximum comfort for our guests. In an inhabited island so foreign, and after a day full of activities. 
+            </p>
+
+            <a href="https://plumeriamaldives.com/" target="_blank">
+              <button class="button"> Read More </button>
+            </a>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <title>Information</title>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Information</title>
+    <style>
+        body{background-image: linear-gradient(to right top, #0d1f39, #0f1f3f, #131f44, #191e48, #211c4c);}
+ 
+    .holdingcontainer{
+      max-width: 100%;
+      display: flex;
+      background-color:beige;
+      padding: 50px;
+      box-sizing: border-box;
+      flex-direction: row;
+    }
+
+    .internalcontainerL{
+      flex: 1;
+      background-color:darkslateblue;
+      padding: 30px;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+    }
+
+    .internalcontainerM{
+      flex: 1;
+      background: pink;
+      padding: 30px;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+    }
+
+    .internalcontainerR{
+      flex: 1;
+      background-color:cadetblue;
+      padding: 30px;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+    }
+
+    @media screen and (max-width: 768px){
+      .holdingcontainer{
+        flex-direction: column-reverse;
+      }
+    }
+        
+            .div1{background-color: #ffe0d8; margin-top: 0px; width: 80%;height:2890px; margin: 25px auto; padding: 1px 15px}
+        img {
+  float: left;
+            
+}
+ 
+  
+        .glow-on-hover {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background:linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+    </style>
+  </head>
+
+  <body>
+         <h1 style="font-size: 50px;text-align:center;color: white"> Information</h1>
+  
+      
+         <div class="holdingcontainer">
+         
+     <div class="internalcontainerL" style="font-size: 20px;color: white;font-family: cursive"><h1 style="font-size:40px;color: white">SURFING</h1><img class="dasimages" src="https://i.ytimg.com/vi/8be5Sq3dRp0/maxresdefault.jpg" style="width=110px;height:250px">Surfing in the Maldives is tempered by the North-East and South-West monsoons. During the North-East monsoon (from March until April), conditions are optimal in the Southern Atolls. From May to October, during the South-West monsoon, the best surfing area is in the Northern atolls or the Central atolls. </div>
+             
+      <div class="internalcontainerM"  style="font-size: 20px;color: white;font-family: cursive"><h1>ADDU NATURE PARK</h1><img class="dasimages" src="https://visitmaldives.s3.amazonaws.com/ArovJNoj/c/phz1md4y-gallery-carousel.jpg" style="width=200px;height:250px">
+       Addu Atoll is the southernmost atoll in the Maldives atoll chain. There are altogether five inhabited islands, which form six administrative districts, in the atoll. The islands on the western flan.Addu Atoll is the southernmost atoll in the Maldives atoll chain.</div>
+
+      <div class="internalcontainerR" style="font-size: 20px;color: white;font-family: cursive"><h1>DIVING IN ADDU ATOLL</h1><img class="dasimages" src="https://img.jakpost.net/c/2017/01/26/2017_01_26_20163_1485417604._large.jpg"style="width=200px;height:250px">Addu Atoll offers a choice of stunning dives in a range of diverse dive locations. The reefs of the atoll were not affected by the coral bleaching event of 1998 which affected the rest of the count.</div>
+    </div>
+      
+        <br><br>
+      
+      <br><br>
+        <div class="div1">
+            
+            <h2 style="font-size: 35px;color: darkslateblue">GEOGRAPHY</h2>
+
+
+
+<p style="font-family:Georgia ; font-size: 25px"><img src="https://visitmaldives.s3.amazonaws.com/24YE1Yey/c/s5fdebdc-shareable_image.jpg" alt="Pineapple" style="width:700px;height:350px;margin-right:15px">
+The Maldives is made up of 26 coral atolls and has approximately 1,190 islands which span over 90,000 sq km of ocean. Most atolls are fringed by large ring-shaped coral reefs which support the islands. Only 200 of the Maldives' islands are inhabited full time and approximately 100 are occupied by hotels and resorts.</p>
+
+
+    
+<a href="https://en.wikipedia.org/wiki/Geography_of_the_Maldives" target="_blank"> 
+    
+      <button class="glow-on-hover" type="button">Read More</button></a>
+            
+            
+            <br><br><br><br>
+              <h2 style="font-size: 35px;color: darkslateblue">TOURISM</h2>
+
+
+
+<p style="font-family:Georgia ; font-size: 25px"><img src="https://www.traveldailymedia.com/assets/2020/08/shutterstock_427956421.jpg" alt="Pineapple" style="width:700px;height:350px;margin-right:15px;float: right">
+The Maldives remained largely unknown to tourists until the early 1970s. Only 189 islands are home to its 447,137 inhabitants. The other islands are used entirely for economic purposes, of which tourism and agriculture are the most dominant. Tourism accounts for 28% of the GDP and more than 60% of the Maldives' foreign exchange receipts. Over 90% of government tax revenue comes from import duties and tourism-related taxes...</p>
+
+<a href="https://en.wikipedia.org/wiki/Maldives#Tourism" target="_blank"> 
+
+    
+    
+    <button class="glow-on-hover" type="button">Read More</button></a>
+            
+       
+       <br><br><br><br>
+              <h2 style="font-size: 35px;color: darkslateblue">THE ENVIRONMENT</h2>
+
+
+
+<p style="font-family:Georgia ; font-size: 25px"><img src="https://visitmaldives.s3.amazonaws.com/6eY3pq3l/c/wbrbzyzf-shareable_image.jpg" alt="Pineapple" style="width:700px;height:350px;margin-right:15px;float: left">
+The Maldives is made up of 26 coral atolls and has approximately 1,190 islands which span over 90,000 sq km of ocean. Most atolls are fringed by large ring-shaped coral reefs which support the islands. Only 200 of the Maldives' islands are inhabited full time and approximately 100 are occupied by hotels and resorts.</p>
+
+<a href="http://www.fao.org/3/X5623E/x5623e0r.htm" target="_blank">  
+
+    <button class="glow-on-hover" type="button">Read More</button></a>
+            
+        <br><br><br><br>
+              <h2 style="font-size: 35px;color: darkslateblue">TRANSPORTATION</h2>
+
+
+
+<p style="font-family:Georgia ; font-size: 25px"><img src="https://static.wixstatic.com/media/1ee96f_253c8f9f68ad43c3bee6f4e2184e2446.jpg" alt="Pineapple" style="width:700px;height:350px;margin-right:15px;float: right">
+The Maldives is made up of 26 coral atolls and has approximately 1,190 islands which span over 90,000 sq km of ocean. Most atolls are fringed by large ring-shaped coral reefs which support the islands. Only 200 of the Maldives' islands are inhabited full time and approximately 100 are occupied by hotels and resorts.</p>
+
+<a href="https://en.wikipedia.org/wiki/Maldives#Transportation" target="_blank"> 
+
+ 
+    <button class="glow-on-hover" type="button">Read More</button></a>
+            
+         
+            <br><br><br><br>
+              <h2 style="font-size: 35px;color: darkslateblue">CULTURE</h2>
+
+
+
+<p style="font-family:Georgia ; font-size: 25px"><img src="https://www.villanovo.com/images/apgs/apg_134_411_1496059128.jpg" alt="Pineapple" style="width:700px;height:350px;margin-right:15px;float: right;float: left">
+The Maldives is made up of 26 coral atolls and has approximately 1,190 islands which span over 90,000 sq km of ocean. Most atolls are fringed by large ring-shaped coral reefs which support the islands. Only 200 of the Maldives' islands are inhabited full time and approximately 100 are occupied by hotels and resorts.</p>
+
+<a href="https://en.wikipedia.org/wiki/Maldives#Culture" target="_blank">
+
+    <button class="glow-on-hover" type="button">Read More</button></a>
+            
+       
+              <br><br><br><br><br><br>
+              <h2 style="font-size: 35px;color: darkslateblue">CONNECTIVITY</h2>
+
+
+
+<p style="font-family:Georgia ; font-size: 25px"><img src="https://static.wixstatic.com/media/1ee96f_253c8f9f68ad43c3bee6f4e2184e2446.jpg" alt="Pineapple" style="width:700px;height:350px;margin-right:15px;float: right">
+The Maldives is made up of 26 coral atolls and has approximately 1,190 islands which span over 90,000 sq km of ocean. Most atolls are fringed by large ring-shaped coral reefs which support the islands. Only 200 of the Maldives' islands are inhabited full time and approximately 100 are occupied by hotels and resorts.</p>
+
+<a href="https://en.wikipedia.org/wiki/Mega_Maldives" target="_blank"> 
+
+    
+    
+    <button class="glow-on-hover" type="button">Read More</button></a>
+   
+            
+      </div>
+      
+     
+    
+    
+  </body>
+</html>

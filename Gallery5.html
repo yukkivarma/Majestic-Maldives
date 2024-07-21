@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <title>Gallery</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    
+     body{background-image: linear-gradient(to right top, #0d1f39, #0f1f3f, #131f44, #191e48, #211c4c);}
+ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0px 4px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="header" id="myHeader">
+  <h1 style="font-size: 50px ; color: white">Gallery</h1>
+  
+  
+</div>
+
+
+<div class="row"> 
+  <div class="column">
+    <img src="https://maldivesfloatingcity.com/wp-content/uploads/2021/03/Maldivesfloatingcity-Visual-1-Big.jpg" style="width:100%">
+    <img src="https://maldivesfloatingcity.com/wp-content/uploads/2021/03/Maldivesfloatingcity-Main-Render-2021.jpg" style="width:100%">
+    <img src="https://maldivesfloatingcity.com/wp-content/uploads/2021/03/Maldivesfloatingcity-Visual-2-Big.jpg" style="width:100%">
+    <img src="https://maldivesfloatingcity.com/wp-content/uploads/2021/03/Maldivesfloatingcity-Visual-3-Big.jpg" style="width:100%">
+    <img src="https://wallpaperaccess.com/full/1192259.jpg" style="width:100%">
+    <img src="https://media.cntraveler.com/photos/57fea9ec8584f8cd20e65f15/16:9/w_1600,c_limit/Aerial-One&OnlyReethiRah-Maldives-CRHotel.jpg" style="width:100%">
+    <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/10/about4.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/10/cover21.jpg" style="width:100%">
+    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/10/best-time.jpg" style="width:100%">
+    <img src="https://c0.wallpaperflare.com/preview/665/983/631/aerial-shot-bird-s-eye-view-daylight-from-above.jpg" style="width:100%">
+    <img src="https://www.wallpapers13.com/wp-content/uploads/2017/10/Dusit-Thani-Villa-Maldives-island-luxury-resort-on-Mudhdhoo-Island-in-Baa-Atoll-HD-Wallpaper-for-Desktop-1920x1200-1280x1024.jpg" style="width:100%">
+    <img src="https://images.unsplash.com/photo-1537162998323-3d3675e0e87c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1hbGRpdmVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" style="width:100%">
+       <img src="https://images5.alphacoders.com/939/939874.jpg" style="width:100%">
+    
+  </div>  
+  
+</div>
+
+<script>
+
+var elements = document.getElementsByClassName("column");
+
+
+var i;
+
+
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  
+    elements[i].style.flex = "100%";
+  }
+}
+
+
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  
+    elements[i].style.flex = "50%";
+  }
+}
+
+
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  
+    elements[i].style.flex = "25%";
+  }
+}
+
+
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
